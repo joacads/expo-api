@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint",
-    "build-sdk": "./node_modules/.bin/lb-sdk server/server.js ../expo-web/src/app/shared/sdk/"
+    "build-sdk": "./node_modules/.bin/lb-sdk server/server.js ../expo-web/src/app/shared/sdk/",
+    "nodemon": "nodemon ."
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -19,6 +20,7 @@
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^6.2.0",
     "loopback-connector-mongodb": "^3.9.2",
+    "redis": "^2.8.0",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^3.0.0"
   },
