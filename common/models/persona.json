@@ -1,0 +1,55 @@
+{
+  "name": "persona",
+  "plural": "personas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "edad": {
+      "type": "number"
+    },
+    "fechaCreacion": {
+      "type": "date"
+    },
+    "fechaBaja": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "direcciones": {
+      "type": "embedsMany",
+      "model": "direccion",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {
+    "promedioEdades": {
+      "accepts": [],
+      "returns": [
+        {
+          "arg": "promedio",
+          "type": "number",
+          "root": false,
+          "description": ""
+        }
+      ],
+      "description": "",
+      "http": [
+        {
+          "path": "/promedio-edades",
+          "verb": "get"
+        }
+      ]
+    }
+  }
+}
