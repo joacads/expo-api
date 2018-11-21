@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "build-sdk": "./node_modules/.bin/lb-sdk server/server.js ../expo-web/src/app/shared/sdk/"
   },
   "dependencies": {
     "compression": "^1.0.3",
@@ -21,6 +22,7 @@
     "loopback": "^3.22.0"
   },
   "devDependencies": {
+    "@mean-expert/loopback-sdk-builder": "^2.3.1",
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0"
   },
