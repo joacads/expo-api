@@ -1,0 +1,32 @@
+{
+  "name": "direccion",
+  "plural": "direcciones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "uuid"
+    },
+    "calle": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "latitud": {
+      "type": "number"
+    },
+    "longitud": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
