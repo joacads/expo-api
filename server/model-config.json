@@ -34,5 +34,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "persona": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "direccion": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
